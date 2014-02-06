@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B0432441546B361004D52E2 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 1B0432431546B361004D52E2 /* README */; };
+		1B375512154AAA21001653B0 /* TIBLECBKeyfob.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B375511154AAA21001653B0 /* TIBLECBKeyfob.m */; };
+		1BCB114B1546A57100BAFFB4 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCB114A1546A57100BAFFB4 /* CoreBluetooth.framework */; };
+		1BCB11551546B2CF00BAFFB4 /* BlueToothDeviceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB11511546B2CE00BAFFB4 /* BlueToothDeviceController.m */; };
+		1BCB11701546B2EE00BAFFB4 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB11581546B2EE00BAFFB4 /* NSObject+SBJson.m */; };
+		1BCB11711546B2EE00BAFFB4 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB115B1546B2EE00BAFFB4 /* SBJsonParser.m */; };
+		1BCB11721546B2EE00BAFFB4 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB115D1546B2EE00BAFFB4 /* SBJsonStreamParser.m */; };
+		1BCB11731546B2EE00BAFFB4 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB115F1546B2EE00BAFFB4 /* SBJsonStreamParserAccumulator.m */; };
+		1BCB11741546B2EE00BAFFB4 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB11611546B2EE00BAFFB4 /* SBJsonStreamParserAdapter.m */; };
+		1BCB11751546B2EE00BAFFB4 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB11631546B2EE00BAFFB4 /* SBJsonStreamParserState.m */; };
+		1BCB11761546B2EE00BAFFB4 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB11651546B2EE00BAFFB4 /* SBJsonStreamWriter.m */; };
+		1BCB11771546B2EE00BAFFB4 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB11671546B2EE00BAFFB4 /* SBJsonStreamWriterAccumulator.m */; };
+		1BCB11781546B2EE00BAFFB4 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB11691546B2EE00BAFFB4 /* SBJsonStreamWriterState.m */; };
+		1BCB11791546B2EE00BAFFB4 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB116B1546B2EE00BAFFB4 /* SBJsonTokeniser.m */; };
+		1BCB117A1546B2EE00BAFFB4 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB116D1546B2EE00BAFFB4 /* SBJsonUTF8Stream.m */; };
+		1BCB117B1546B2EE00BAFFB4 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB116F1546B2EE00BAFFB4 /* SBJsonWriter.m */; };
+		BC33AE85154AA30600B883AE /* BlueToothController in Resources */ = {isa = PBXBuildFile; fileRef = BC33AE84154AA30600B883AE /* BlueToothController */; };
+		BC90847E1546362C00AAD393 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC90847D1546362C00AAD393 /* Foundation.framework */; };
+		BC9084801546362C00AAD393 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC90847F1546362C00AAD393 /* UIKit.framework */; };
+		BC9084821546362C00AAD393 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9084811546362C00AAD393 /* CoreGraphics.framework */; };
+		BC9084841546362C00AAD393 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9084831546362C00AAD393 /* AddressBook.framework */; };
+		BC9084861546362C00AAD393 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9084851546362C00AAD393 /* AddressBookUI.framework */; };
+		BC9084881546362C00AAD393 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9084871546362C00AAD393 /* AudioToolbox.framework */; };
+		BC90848A1546362C00AAD393 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9084891546362C00AAD393 /* AVFoundation.framework */; };
+		BC90848C1546362C00AAD393 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC90848B1546362C00AAD393 /* CoreLocation.framework */; };
+		BC90848E1546362C00AAD393 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC90848D1546362C00AAD393 /* MediaPlayer.framework */; };
+		BC9084901546362C00AAD393 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC90848F1546362C00AAD393 /* QuartzCore.framework */; };
+		BC9084921546362C00AAD393 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9084911546362C00AAD393 /* SystemConfiguration.framework */; };
+		BC9084941546362C00AAD393 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9084931546362C00AAD393 /* MobileCoreServices.framework */; };
+		BC9084961546362C00AAD393 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9084951546362C00AAD393 /* CoreMedia.framework */; };
+		BC90849C1546362C00AAD393 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC90849A1546362C00AAD393 /* InfoPlist.strings */; };
+		BC90849E1546362C00AAD393 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC90849D1546362C00AAD393 /* main.m */; };
+		BC9084A11546362C00AAD393 /* Cordova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9084A01546362C00AAD393 /* Cordova.framework */; };
+		BC9084A61546362C00AAD393 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC9084A41546362C00AAD393 /* Localizable.strings */; };
+		BC9084AA1546362C00AAD393 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC9084A81546362C00AAD393 /* Localizable.strings */; };
+		BC9084AE1546362C00AAD393 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC9084AC1546362C00AAD393 /* Localizable.strings */; };
+		BC9084B21546362C00AAD393 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC9084B01546362C00AAD393 /* Localizable.strings */; };
+		BC9084C01546362C00AAD393 /* Capture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BC9084BF1546362C00AAD393 /* Capture.bundle */; };
+		BC9084C21546362C00AAD393 /* Cordova.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC9084C11546362C00AAD393 /* Cordova.plist */; };
+		BC9084C61546362C00AAD393 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9084C51546362C00AAD393 /* AppDelegate.m */; };
+		BC9084C91546362C00AAD393 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9084C81546362C00AAD393 /* MainViewController.m */; };
+		BC9084CB1546362C00AAD393 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC9084CA1546362C00AAD393 /* MainViewController.xib */; };
+		BC9084CF1546362C00AAD393 /* verify.sh in Resources */ = {isa = PBXBuildFile; fileRef = BC9084CE1546362C00AAD393 /* verify.sh */; };
+		BC9084D61546364800AAD393 /* www in Resources */ = {isa = PBXBuildFile; fileRef = BC9084D51546364800AAD393 /* www */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B0432431546B361004D52E2 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README; path = ProteusLibrary/README; sourceTree = "<group>"; };
+		1B375510154AAA21001653B0 /* TIBLECBKeyfob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TIBLECBKeyfob.h; path = PhilipsLeash/ProteusLibrary/FeatureConnector/BlueToothController/TIBLECBKeyfob.h; sourceTree = SOURCE_ROOT; };
+		1B375511154AAA21001653B0 /* TIBLECBKeyfob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TIBLECBKeyfob.m; path = PhilipsLeash/ProteusLibrary/FeatureConnector/BlueToothController/TIBLECBKeyfob.m; sourceTree = SOURCE_ROOT; };
+		1BCB114A1546A57100BAFFB4 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		1BCB11501546B2CE00BAFFB4 /* BlueToothDeviceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlueToothDeviceController.h; path = PhilipsLeash/FeatureConnector/BlueToothController/BlueToothDeviceController.h; sourceTree = SOURCE_ROOT; };
+		1BCB11511546B2CE00BAFFB4 /* BlueToothDeviceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlueToothDeviceController.m; path = PhilipsLeash/FeatureConnector/BlueToothController/BlueToothDeviceController.m; sourceTree = SOURCE_ROOT; };
+		1BCB11541546B2CE00BAFFB4 /* TIBLECBKeyfobDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TIBLECBKeyfobDefines.h; path = PhilipsLeash/FeatureConnector/BlueToothController/TIBLECBKeyfobDefines.h; sourceTree = SOURCE_ROOT; };
+		1BCB11571546B2EE00BAFFB4 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SBJson.h"; path = "PhilipsLeash/FeatureConnector/JSON/NSObject+SBJson.h"; sourceTree = SOURCE_ROOT; };
+		1BCB11581546B2EE00BAFFB4 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SBJson.m"; path = "PhilipsLeash/FeatureConnector/JSON/NSObject+SBJson.m"; sourceTree = SOURCE_ROOT; };
+		1BCB11591546B2EE00BAFFB4 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJson.h; path = PhilipsLeash/FeatureConnector/JSON/SBJson.h; sourceTree = SOURCE_ROOT; };
+		1BCB115A1546B2EE00BAFFB4 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonParser.h; path = PhilipsLeash/FeatureConnector/JSON/SBJsonParser.h; sourceTree = SOURCE_ROOT; };
+		1BCB115B1546B2EE00BAFFB4 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = PhilipsLeash/FeatureConnector/JSON/SBJsonParser.m; sourceTree = SOURCE_ROOT; };
+		1BCB115C1546B2EE00BAFFB4 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParser.h; path = PhilipsLeash/FeatureConnector/JSON/SBJsonStreamParser.h; sourceTree = SOURCE_ROOT; };
+		1BCB115D1546B2EE00BAFFB4 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParser.m; path = PhilipsLeash/FeatureConnector/JSON/SBJsonStreamParser.m; sourceTree = SOURCE_ROOT; };
+		1BCB115E1546B2EE00BAFFB4 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserAccumulator.h; path = PhilipsLeash/FeatureConnector/JSON/SBJsonStreamParserAccumulator.h; sourceTree = SOURCE_ROOT; };
+		1BCB115F1546B2EE00BAFFB4 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserAccumulator.m; path = PhilipsLeash/FeatureConnector/JSON/SBJsonStreamParserAccumulator.m; sourceTree = SOURCE_ROOT; };
+		1BCB11601546B2EE00BAFFB4 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserAdapter.h; path = PhilipsLeash/FeatureConnector/JSON/SBJsonStreamParserAdapter.h; sourceTree = SOURCE_ROOT; };
+		1BCB11611546B2EE00BAFFB4 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserAdapter.m; path = PhilipsLeash/FeatureConnector/JSON/SBJsonStreamParserAdapter.m; sourceTree = SOURCE_ROOT; };
+		1BCB11621546B2EE00BAFFB4 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserState.h; path = PhilipsLeash/FeatureConnector/JSON/SBJsonStreamParserState.h; sourceTree = SOURCE_ROOT; };
+		1BCB11631546B2EE00BAFFB4 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserState.m; path = PhilipsLeash/FeatureConnector/JSON/SBJsonStreamParserState.m; sourceTree = SOURCE_ROOT; };
+		1BCB11641546B2EE00BAFFB4 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriter.h; path = PhilipsLeash/FeatureConnector/JSON/SBJsonStreamWriter.h; sourceTree = SOURCE_ROOT; };
+		1BCB11651546B2EE00BAFFB4 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriter.m; path = PhilipsLeash/FeatureConnector/JSON/SBJsonStreamWriter.m; sourceTree = SOURCE_ROOT; };
+		1BCB11661546B2EE00BAFFB4 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriterAccumulator.h; path = PhilipsLeash/FeatureConnector/JSON/SBJsonStreamWriterAccumulator.h; sourceTree = SOURCE_ROOT; };
+		1BCB11671546B2EE00BAFFB4 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriterAccumulator.m; path = PhilipsLeash/FeatureConnector/JSON/SBJsonStreamWriterAccumulator.m; sourceTree = SOURCE_ROOT; };
+		1BCB11681546B2EE00BAFFB4 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriterState.h; path = PhilipsLeash/FeatureConnector/JSON/SBJsonStreamWriterState.h; sourceTree = SOURCE_ROOT; };
+		1BCB11691546B2EE00BAFFB4 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriterState.m; path = PhilipsLeash/FeatureConnector/JSON/SBJsonStreamWriterState.m; sourceTree = SOURCE_ROOT; };
+		1BCB116A1546B2EE00BAFFB4 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonTokeniser.h; path = PhilipsLeash/FeatureConnector/JSON/SBJsonTokeniser.h; sourceTree = SOURCE_ROOT; };
+		1BCB116B1546B2EE00BAFFB4 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonTokeniser.m; path = PhilipsLeash/FeatureConnector/JSON/SBJsonTokeniser.m; sourceTree = SOURCE_ROOT; };
+		1BCB116C1546B2EE00BAFFB4 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonUTF8Stream.h; path = PhilipsLeash/FeatureConnector/JSON/SBJsonUTF8Stream.h; sourceTree = SOURCE_ROOT; };
+		1BCB116D1546B2EE00BAFFB4 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonUTF8Stream.m; path = PhilipsLeash/FeatureConnector/JSON/SBJsonUTF8Stream.m; sourceTree = SOURCE_ROOT; };
+		1BCB116E1546B2EE00BAFFB4 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = PhilipsLeash/FeatureConnector/JSON/SBJsonWriter.h; sourceTree = SOURCE_ROOT; };
+		1BCB116F1546B2EE00BAFFB4 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = PhilipsLeash/FeatureConnector/JSON/SBJsonWriter.m; sourceTree = SOURCE_ROOT; };
+		BC33AE84154AA30600B883AE /* BlueToothController */ = {isa = PBXFileReference; lastKnownFileType = folder; name = BlueToothController; path = PhilipsLeash/FeatureConnector/BlueToothController; sourceTree = SOURCE_ROOT; };
+		BC9084791546362C00AAD393 /* PhilipsLeash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhilipsLeash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC90847D1546362C00AAD393 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BC90847F1546362C00AAD393 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BC9084811546362C00AAD393 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BC9084831546362C00AAD393 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		BC9084851546362C00AAD393 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		BC9084871546362C00AAD393 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BC9084891546362C00AAD393 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BC90848B1546362C00AAD393 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BC90848D1546362C00AAD393 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		BC90848F1546362C00AAD393 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BC9084911546362C00AAD393 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BC9084931546362C00AAD393 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BC9084951546362C00AAD393 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		BC9084991546362C00AAD393 /* PhilipsLeash-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhilipsLeash-Info.plist"; sourceTree = "<group>"; };
+		BC90849B1546362C00AAD393 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BC90849D1546362C00AAD393 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC90849F1546362C00AAD393 /* PhilipsLeash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhilipsLeash-Prefix.pch"; sourceTree = "<group>"; };
+		BC9084A01546362C00AAD393 /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = /Users/Shared/Cordova/Frameworks/Cordova.framework; sourceTree = "<absolute>"; };
+		BC9084A51546362C00AAD393 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BC9084A91546362C00AAD393 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Resources/es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BC9084AD1546362C00AAD393 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = Resources/de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BC9084B11546362C00AAD393 /* se */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = se; path = Resources/se.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BC9084BF1546362C00AAD393 /* Capture.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Capture.bundle; path = Resources/Capture.bundle; sourceTree = "<group>"; };
+		BC9084C11546362C00AAD393 /* Cordova.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Cordova.plist; sourceTree = "<group>"; };
+		BC9084C41546362C00AAD393 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		BC9084C51546362C00AAD393 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
+		BC9084C71546362C00AAD393 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
+		BC9084C81546362C00AAD393 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/MainViewController.m; sourceTree = "<group>"; };
+		BC9084CA1546362C00AAD393 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
+		BC9084CD1546362C00AAD393 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
+		BC9084CE1546362C00AAD393 /* verify.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = verify.sh; sourceTree = "<group>"; };
+		BC9084D51546364800AAD393 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC9084731546362C00AAD393 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BCB114B1546A57100BAFFB4 /* CoreBluetooth.framework in Frameworks */,
+				BC90847E1546362C00AAD393 /* Foundation.framework in Frameworks */,
+				BC9084801546362C00AAD393 /* UIKit.framework in Frameworks */,
+				BC9084821546362C00AAD393 /* CoreGraphics.framework in Frameworks */,
+				BC9084841546362C00AAD393 /* AddressBook.framework in Frameworks */,
+				BC9084861546362C00AAD393 /* AddressBookUI.framework in Frameworks */,
+				BC9084881546362C00AAD393 /* AudioToolbox.framework in Frameworks */,
+				BC90848A1546362C00AAD393 /* AVFoundation.framework in Frameworks */,
+				BC90848C1546362C00AAD393 /* CoreLocation.framework in Frameworks */,
+				BC90848E1546362C00AAD393 /* MediaPlayer.framework in Frameworks */,
+				BC9084901546362C00AAD393 /* QuartzCore.framework in Frameworks */,
+				BC9084921546362C00AAD393 /* SystemConfiguration.framework in Frameworks */,
+				BC9084941546362C00AAD393 /* MobileCoreServices.framework in Frameworks */,
+				BC9084961546362C00AAD393 /* CoreMedia.framework in Frameworks */,
+				BC9084A11546362C00AAD393 /* Cordova.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9084761546362C00AAD393 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BCB11111546A4B000BAFFB4 /* ProteusLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				1B0432431546B361004D52E2 /* README */,
+				1BCB11161546A51500BAFFB4 /* FeatureConnector */,
+			);
+			name = ProteusLibrary;
+			sourceTree = "<group>";
+		};
+		1BCB11161546A51500BAFFB4 /* FeatureConnector */ = {
+			isa = PBXGroup;
+			children = (
+				1BCB11171546A51500BAFFB4 /* ApplicationPreferences */,
+				1BCB11181546A51500BAFFB4 /* BlueToothController */,
+				1BCB111E1546A51500BAFFB4 /* iPod */,
+				1BCB111F1546A51500BAFFB4 /* JSON */,
+				1BCB11391546A51500BAFFB4 /* Volume */,
+			);
+			name = FeatureConnector;
+			path = ../../PBTLeash/PhilipsLeash/ProteusLibrary/FeatureConnector;
+			sourceTree = "<group>";
+		};
+		1BCB11171546A51500BAFFB4 /* ApplicationPreferences */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ApplicationPreferences;
+			sourceTree = "<group>";
+		};
+		1BCB11181546A51500BAFFB4 /* BlueToothController */ = {
+			isa = PBXGroup;
+			children = (
+				1B375510154AAA21001653B0 /* TIBLECBKeyfob.h */,
+				1B375511154AAA21001653B0 /* TIBLECBKeyfob.m */,
+				1BCB11501546B2CE00BAFFB4 /* BlueToothDeviceController.h */,
+				1BCB11511546B2CE00BAFFB4 /* BlueToothDeviceController.m */,
+				1BCB11541546B2CE00BAFFB4 /* TIBLECBKeyfobDefines.h */,
+			);
+			path = BlueToothController;
+			sourceTree = "<group>";
+		};
+		1BCB111E1546A51500BAFFB4 /* iPod */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = iPod;
+			sourceTree = "<group>";
+		};
+		1BCB111F1546A51500BAFFB4 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				1BCB11571546B2EE00BAFFB4 /* NSObject+SBJson.h */,
+				1BCB11581546B2EE00BAFFB4 /* NSObject+SBJson.m */,
+				1BCB11591546B2EE00BAFFB4 /* SBJson.h */,
+				1BCB115A1546B2EE00BAFFB4 /* SBJsonParser.h */,
+				1BCB115B1546B2EE00BAFFB4 /* SBJsonParser.m */,
+				1BCB115C1546B2EE00BAFFB4 /* SBJsonStreamParser.h */,
+				1BCB115D1546B2EE00BAFFB4 /* SBJsonStreamParser.m */,
+				1BCB115E1546B2EE00BAFFB4 /* SBJsonStreamParserAccumulator.h */,
+				1BCB115F1546B2EE00BAFFB4 /* SBJsonStreamParserAccumulator.m */,
+				1BCB11601546B2EE00BAFFB4 /* SBJsonStreamParserAdapter.h */,
+				1BCB11611546B2EE00BAFFB4 /* SBJsonStreamParserAdapter.m */,
+				1BCB11621546B2EE00BAFFB4 /* SBJsonStreamParserState.h */,
+				1BCB11631546B2EE00BAFFB4 /* SBJsonStreamParserState.m */,
+				1BCB11641546B2EE00BAFFB4 /* SBJsonStreamWriter.h */,
+				1BCB11651546B2EE00BAFFB4 /* SBJsonStreamWriter.m */,
+				1BCB11661546B2EE00BAFFB4 /* SBJsonStreamWriterAccumulator.h */,
+				1BCB11671546B2EE00BAFFB4 /* SBJsonStreamWriterAccumulator.m */,
+				1BCB11681546B2EE00BAFFB4 /* SBJsonStreamWriterState.h */,
+				1BCB11691546B2EE00BAFFB4 /* SBJsonStreamWriterState.m */,
+				1BCB116A1546B2EE00BAFFB4 /* SBJsonTokeniser.h */,
+				1BCB116B1546B2EE00BAFFB4 /* SBJsonTokeniser.m */,
+				1BCB116C1546B2EE00BAFFB4 /* SBJsonUTF8Stream.h */,
+				1BCB116D1546B2EE00BAFFB4 /* SBJsonUTF8Stream.m */,
+				1BCB116E1546B2EE00BAFFB4 /* SBJsonWriter.h */,
+				1BCB116F1546B2EE00BAFFB4 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		1BCB11391546A51500BAFFB4 /* Volume */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Volume;
+			sourceTree = "<group>";
+		};
+		BC90846B1546362C00AAD393 = {
+			isa = PBXGroup;
+			children = (
+				1BCB114A1546A57100BAFFB4 /* CoreBluetooth.framework */,
+				BC9084D51546364800AAD393 /* www */,
+				BC9084971546362C00AAD393 /* PhilipsLeash */,
+				BC90847C1546362C00AAD393 /* Frameworks */,
+				BC90847A1546362C00AAD393 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC90847A1546362C00AAD393 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC9084791546362C00AAD393 /* PhilipsLeash.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC90847C1546362C00AAD393 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC90847D1546362C00AAD393 /* Foundation.framework */,
+				BC90847F1546362C00AAD393 /* UIKit.framework */,
+				BC9084811546362C00AAD393 /* CoreGraphics.framework */,
+				BC9084831546362C00AAD393 /* AddressBook.framework */,
+				BC9084851546362C00AAD393 /* AddressBookUI.framework */,
+				BC9084871546362C00AAD393 /* AudioToolbox.framework */,
+				BC9084891546362C00AAD393 /* AVFoundation.framework */,
+				BC90848B1546362C00AAD393 /* CoreLocation.framework */,
+				BC90848D1546362C00AAD393 /* MediaPlayer.framework */,
+				BC90848F1546362C00AAD393 /* QuartzCore.framework */,
+				BC9084911546362C00AAD393 /* SystemConfiguration.framework */,
+				BC9084931546362C00AAD393 /* MobileCoreServices.framework */,
+				BC9084951546362C00AAD393 /* CoreMedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC9084971546362C00AAD393 /* PhilipsLeash */ = {
+			isa = PBXGroup;
+			children = (
+				1BCB11111546A4B000BAFFB4 /* ProteusLibrary */,
+				BC9084A01546362C00AAD393 /* Cordova.framework */,
+				BC9084A21546362C00AAD393 /* Resources */,
+				BC9084C31546362C00AAD393 /* Classes */,
+				BC9084CC1546362C00AAD393 /* Plugins */,
+				BC9084981546362C00AAD393 /* Supporting Files */,
+			);
+			path = PhilipsLeash;
+			sourceTree = "<group>";
+		};
+		BC9084981546362C00AAD393 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC9084991546362C00AAD393 /* PhilipsLeash-Info.plist */,
+				BC90849A1546362C00AAD393 /* InfoPlist.strings */,
+				BC90849D1546362C00AAD393 /* main.m */,
+				BC90849F1546362C00AAD393 /* PhilipsLeash-Prefix.pch */,
+				BC9084C11546362C00AAD393 /* Cordova.plist */,
+				BC9084CA1546362C00AAD393 /* MainViewController.xib */,
+				BC9084CE1546362C00AAD393 /* verify.sh */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC9084A21546362C00AAD393 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC9084BF1546362C00AAD393 /* Capture.bundle */,
+				BC9084A31546362C00AAD393 /* en.lproj */,
+				BC9084A71546362C00AAD393 /* es.lproj */,
+				BC9084AB1546362C00AAD393 /* de.lproj */,
+				BC9084AF1546362C00AAD393 /* se.lproj */,
+				BC9084B31546362C00AAD393 /* icons */,
+				BC9084BA1546362C00AAD393 /* splash */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BC9084A31546362C00AAD393 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				BC9084A41546362C00AAD393 /* Localizable.strings */,
+			);
+			name = en.lproj;
+			sourceTree = "<group>";
+		};
+		BC9084A71546362C00AAD393 /* es.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				BC9084A81546362C00AAD393 /* Localizable.strings */,
+			);
+			name = es.lproj;
+			sourceTree = "<group>";
+		};
+		BC9084AB1546362C00AAD393 /* de.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				BC9084AC1546362C00AAD393 /* Localizable.strings */,
+			);
+			name = de.lproj;
+			sourceTree = "<group>";
+		};
+		BC9084AF1546362C00AAD393 /* se.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				BC9084B01546362C00AAD393 /* Localizable.strings */,
+			);
+			name = se.lproj;
+			sourceTree = "<group>";
+		};
+		BC9084B31546362C00AAD393 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		BC9084BA1546362C00AAD393 /* splash */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = splash;
+			sourceTree = "<group>";
+		};
+		BC9084C31546362C00AAD393 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BC9084C41546362C00AAD393 /* AppDelegate.h */,
+				BC9084C51546362C00AAD393 /* AppDelegate.m */,
+				BC9084C71546362C00AAD393 /* MainViewController.h */,
+				BC9084C81546362C00AAD393 /* MainViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		BC9084CC1546362C00AAD393 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				BC9084CD1546362C00AAD393 /* README */,
+			);
+			name = Plugins;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC9084781546362C00AAD393 /* PhilipsLeash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC9084D21546362C00AAD393 /* Build configuration list for PBXNativeTarget "PhilipsLeash" */;
+			buildPhases = (
+				BC9084721546362C00AAD393 /* Sources */,
+				BC9084731546362C00AAD393 /* Frameworks */,
+				BC9084741546362C00AAD393 /* Resources */,
+				BC9084751546362C00AAD393 /* Sources */,
+				BC9084761546362C00AAD393 /* Frameworks */,
+				BC9084771546362C00AAD393 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhilipsLeash;
+			productName = PhilipsLeash;
+			productReference = BC9084791546362C00AAD393 /* PhilipsLeash.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC90846D1546362C00AAD393 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "keith.ching@philips.com";
+			};
+			buildConfigurationList = BC9084701546362C00AAD393 /* Build configuration list for PBXProject "PhilipsLeash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				es,
+				de,
+				se,
+			);
+			mainGroup = BC90846B1546362C00AAD393;
+			productRefGroup = BC90847A1546362C00AAD393 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC9084781546362C00AAD393 /* PhilipsLeash */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC9084741546362C00AAD393 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC90849C1546362C00AAD393 /* InfoPlist.strings in Resources */,
+				BC9084A61546362C00AAD393 /* Localizable.strings in Resources */,
+				BC9084AA1546362C00AAD393 /* Localizable.strings in Resources */,
+				BC9084AE1546362C00AAD393 /* Localizable.strings in Resources */,
+				BC9084B21546362C00AAD393 /* Localizable.strings in Resources */,
+				BC9084C01546362C00AAD393 /* Capture.bundle in Resources */,
+				BC9084C21546362C00AAD393 /* Cordova.plist in Resources */,
+				BC9084CB1546362C00AAD393 /* MainViewController.xib in Resources */,
+				BC9084CF1546362C00AAD393 /* verify.sh in Resources */,
+				BC9084D61546364800AAD393 /* www in Resources */,
+				1B0432441546B361004D52E2 /* README in Resources */,
+				BC33AE85154AA30600B883AE /* BlueToothController in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BC9084771546362C00AAD393 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\n\t\t\t\t\t\t\t\tchmod 755 \"$PROJECT_DIR/$PROJECT_NAME/verify.sh\"\n\t\t\t\t\t\t\t\t\"$PROJECT_DIR/$PROJECT_NAME/verify.sh\"\n\t\t\t\t\t";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC9084721546362C00AAD393 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC90849E1546362C00AAD393 /* main.m in Sources */,
+				BC9084C61546362C00AAD393 /* AppDelegate.m in Sources */,
+				BC9084C91546362C00AAD393 /* MainViewController.m in Sources */,
+				1BCB11551546B2CF00BAFFB4 /* BlueToothDeviceController.m in Sources */,
+				1BCB11701546B2EE00BAFFB4 /* NSObject+SBJson.m in Sources */,
+				1BCB11711546B2EE00BAFFB4 /* SBJsonParser.m in Sources */,
+				1BCB11721546B2EE00BAFFB4 /* SBJsonStreamParser.m in Sources */,
+				1BCB11731546B2EE00BAFFB4 /* SBJsonStreamParserAccumulator.m in Sources */,
+				1BCB11741546B2EE00BAFFB4 /* SBJsonStreamParserAdapter.m in Sources */,
+				1BCB11751546B2EE00BAFFB4 /* SBJsonStreamParserState.m in Sources */,
+				1BCB11761546B2EE00BAFFB4 /* SBJsonStreamWriter.m in Sources */,
+				1BCB11771546B2EE00BAFFB4 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				1BCB11781546B2EE00BAFFB4 /* SBJsonStreamWriterState.m in Sources */,
+				1BCB11791546B2EE00BAFFB4 /* SBJsonTokeniser.m in Sources */,
+				1BCB117A1546B2EE00BAFFB4 /* SBJsonUTF8Stream.m in Sources */,
+				1BCB117B1546B2EE00BAFFB4 /* SBJsonWriter.m in Sources */,
+				1B375512154AAA21001653B0 /* TIBLECBKeyfob.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9084751546362C00AAD393 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BC90849A1546362C00AAD393 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC90849B1546362C00AAD393 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BC9084A41546362C00AAD393 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC9084A51546362C00AAD393 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		BC9084A81546362C00AAD393 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC9084A91546362C00AAD393 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		BC9084AC1546362C00AAD393 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC9084AD1546362C00AAD393 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		BC9084B01546362C00AAD393 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC9084B11546362C00AAD393 /* se */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC2C490B1547F3590068BAFC /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer: Keith Ching (676B3E5F24)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Keith Ching (676B3E5F24)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "A70FFBA2-310C-41ED-9AAF-6C40885A8F65";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A70FFBA2-310C-41ED-9AAF-6C40885A8F65";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Distribution;
+		};
+		BC2C490C1547F3590068BAFC /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kamala Tennakoon (JX6G4D4NH3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = /Users/Shared/Cordova/Frameworks;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhilipsLeash/PhilipsLeash-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1,",
+					"CORDOVA_FRAMEWORK=1",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "PhilipsLeash/PhilipsLeash-Info.plist";
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak_library",
+					/usr/lib/libSystem.B.dylib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		BC9084D01546362C00AAD393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer: Keith Ching (676B3E5F24)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Keith Ching (676B3E5F24)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "A70FFBA2-310C-41ED-9AAF-6C40885A8F65";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A70FFBA2-310C-41ED-9AAF-6C40885A8F65";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		BC9084D11546362C00AAD393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer: Keith Ching (676B3E5F24)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Keith Ching (676B3E5F24)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "A70FFBA2-310C-41ED-9AAF-6C40885A8F65";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A70FFBA2-310C-41ED-9AAF-6C40885A8F65";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Release;
+		};
+		BC9084D31546362C00AAD393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kamala Tennakoon (JX6G4D4NH3)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = /Users/Shared/Cordova/Frameworks;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhilipsLeash/PhilipsLeash-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1,",
+					"CORDOVA_FRAMEWORK=1",
+				);
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "PhilipsLeash/PhilipsLeash-Info.plist";
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak_library",
+					/usr/lib/libSystem.B.dylib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BC9084D41546362C00AAD393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kamala Tennakoon (JX6G4D4NH3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = /Users/Shared/Cordova/Frameworks;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhilipsLeash/PhilipsLeash-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1,",
+					"CORDOVA_FRAMEWORK=1",
+				);
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "PhilipsLeash/PhilipsLeash-Info.plist";
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak_library",
+					/usr/lib/libSystem.B.dylib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC9084701546362C00AAD393 /* Build configuration list for PBXProject "PhilipsLeash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC9084D01546362C00AAD393 /* Debug */,
+				BC9084D11546362C00AAD393 /* Release */,
+				BC2C490B1547F3590068BAFC /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Distribution;
+		};
+		BC9084D21546362C00AAD393 /* Build configuration list for PBXNativeTarget "PhilipsLeash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC9084D31546362C00AAD393 /* Debug */,
+				BC9084D41546362C00AAD393 /* Release */,
+				BC2C490C1547F3590068BAFC /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Distribution;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC90846D1546362C00AAD393 /* Project object */;
+}
